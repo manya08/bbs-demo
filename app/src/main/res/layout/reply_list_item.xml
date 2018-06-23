@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/reply_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/login_logo"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/reply_username"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/reply_image"
+            android:layout_margin="10dp"
+            android:text="评论用户"
+            />
+        <TextView
+            android:id="@+id/reply_time"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/reply_username"
+            android:layout_margin="10dp"
+            android:text="评论时间"
+            />
+        <TextView
+            android:id="@+id/reply_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reply_image"
+            android:text="评论内容"
+            android:layout_alignLeft="@+id/reply_username"
+            />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

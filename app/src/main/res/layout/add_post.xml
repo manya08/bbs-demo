@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/select_type"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:text="@string/type"
+            android:layout_toRightOf="@+id/spinner"
+            android:background="@drawable/edt_shape"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/editor"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:background="@drawable/edt_shape"
+            android:layout_margin="5dp"
+            />
+        <EditText
+            android:id="@+id/post_context"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="@string/context"
+            android:background="@drawable/edt_shape"
+            android:layout_below="@+id/post_title"
+            android:layout_margin="5dp"
+            android:gravity="top|left"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/add_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/image_add"
+
+            />
+        <!--<GridView-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:id="@+id/gridView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:numColumns="2" />-->
+        <ImageView
+            android:id="@+id/current_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_shape"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/btn_txtsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_shape"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

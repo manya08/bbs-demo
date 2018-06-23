@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wzbc.myapplication.home.Reply"
+    android:orientation="vertical"
+    >
+
+
+        <fragment
+            android:id="@+id/reply_list"
+            class="com.wzbc.myapplication.home.ReplyListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#EEE9E9"
+            >
+                <!--<Button-->
+                    <!--android:id="@+id/back_detail"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/back"-->
+                    <!--/>-->
+                <EditText
+                    android:id="@+id/edt_send"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:hint="发送评论"/>
+                <Button
+                    android:id="@+id/btn_send"
+                    android:background="@color/colorGreen"
+
+                    android:layout_toRightOf="@+id/edt_send"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:text="发送"/>
+        </RelativeLayout>
+
+</LinearLayout>
